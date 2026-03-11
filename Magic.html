@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Magic Lasse Van de Mierop </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Magic">
+
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2, p {
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Fotos.html">Foto's</a></li>
+        <li><a href="Magic.html">Magic</a></li>
+    </ul>
+
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/EMXZfI008nE" frameborder="0" allowfullscreen></iframe>
+    
+
+
+    <head>
+        <title>Magic - Voetbal Spel</title>
+        <meta charset="UTF-8">
+    
+        <style>
+            body{
+                font-family: Arial;
+                background-color: lightblue;
+                text-align: center;
+            }
+    
+            h1{
+                color: darkblue;
+            }
+    
+            #goal{
+                width: 400px;
+                height: 200px;
+                border: 5px solid white;
+                background-color: blue;
+                margin: auto;
+                position: relative;
+            }
+    
+            #ball{
+                font-size: 40px;
+                position: absolute;
+                bottom: 10px;
+                left: 180px;
+            }
+    
+            button{
+                padding: 10px 20px;
+                font-size: 16px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+    
+            #result{
+                font-size: 20px;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+    <h1>⚽ Penalty Shoot Game ⚽</h1>
+    
+    <p>Klik op de knop om een penalty te nemen!</p>
+    
+    <div id="goal">
+        <div id="ball">⚽</div>
+    </div>
+    
+    <button onclick="shoot()">Neem een penalty!</button>
+    
+    <p id="result"></p>
+    <p>Score: <span id="score">0</span></p>
+    
+    <script>
+    
+    let score = 0;
+    
+    function shoot(){
+    
+        let random = Math.random();
+    
+        if(random > 0.5){
+            document.getElementById("result").innerHTML = "GOAL!!! 🥅⚽";
+            score++;
+        }
+        else{
+            document.getElementById("result").innerHTML = "De keeper heeft de bal! 🧤";
+        }
+    
+        document.getElementById("score").innerHTML = score;
+    }
+    
+    </script>
+    
+    <br><br>
+    
+    <p>
+    inspiratie:  
+    <a href="https://www.w3schools.com/js/js_random.asp" target="_blank">
+    https://www.w3schools.com/js/js_random.asp
+    </a>
+    </p>
+    
+    </body>
+    </html>
+
+
+</body>
+</html>
